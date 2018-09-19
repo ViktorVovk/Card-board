@@ -1,0 +1,40 @@
+.card__color {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 6px;
+    background-color: #159e15;
+    opacity: 1;
+    transition: all .3s;
+    border: none;
+}
+
+.card__color:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.card__color--yellow {
+    background-color: #FCFBB2;
+}
+
+.card__color--blue {
+    background-color: #C5E4F6;
+}
+
+.card__color--green {
+    background-color: #C1F3BD;
+}
+
+.card__color--white {
+    background-color: #fff;
+}
+
+.card__color--rose {
+    background-color: #F2C7F2;
+}
+
+.card__color--violet {
+    background-color: #D1C8FE;
+}

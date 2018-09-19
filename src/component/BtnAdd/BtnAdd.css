@@ -1,0 +1,51 @@
+.card__btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: all .3s;
+    background: url(../img/addbutton.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.card__btn--bottom {
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    
+}
+.card__btn--no-create{
+    animation: color 1s 1 ease-in-out;
+}
+.card__btn--bottom:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.card__btn--right {
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card__btn--right:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.card__btn--right[disabled]:hover {
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(1);
+}
+
+.card__btn--bottom[disabled]:hover {
+    cursor: not-allowed;
+    transform: translateX(-50%) scale(1);
+}
+
+@keyframes color {
+from {background-color: rgba(255,255,255,0);}
+50% {background-color: red;}
+to {background-color: rgba(255,255,255,0);}
+}

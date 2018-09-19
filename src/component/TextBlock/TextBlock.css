@@ -1,0 +1,39 @@
+.card--block-style {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border: 3px solid rgb(116, 106, 106);
+    border-radius: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    outline: none;
+    transition: all .3s;
+}
+
+.card--block-style:hover {
+    box-shadow: 0px 0px 17px 0px rgba(162, 166, 46, 1);
+    transition: all .3s;
+}
+
+.card--block-style:focus {
+    box-shadow: 0px 0px 17px 0px rgba(46, 66, 166, 1);
+    transition: all .3s;
+}
+
+.card__title {
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 30px;
+    padding: 0;
+    box-shadow: inset 0px 0px 28px -9px rgba(184, 184, 184, 1);
+    text-overflow: clip;
+}
+
+.card__note-text {
+    height: 160px;
+    box-shadow: inset 0px 0px 28px -9px rgba(184, 184, 184, 1);
+    font-size: 16px;
+
+}

@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    max-width: 1140px;
+    height: 200vh;
+    margin: 0 auto;
+    background: #fff url(./img/background.png);
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+}

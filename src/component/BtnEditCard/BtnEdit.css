@@ -1,0 +1,52 @@
+.card__btn-group {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.card__btn-edit {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0) url(../img/pencil.svg) no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+
+.card__btn-edit:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.card__btn-edit--hidden {
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.card__btn-save {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0) url(../img/ok.svg) no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+}
+
+.card__btn-save--active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.card__btn-save--active:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
