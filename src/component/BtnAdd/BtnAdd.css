@@ -17,9 +17,7 @@
     transform: translateX(-50%);
     
 }
-.card__btn--no-create{
-    animation: color 1s 1 ease-in-out;
-}
+
 .card__btn--bottom:hover {
     transform: translateX(-50%) scale(1.2);
 }
