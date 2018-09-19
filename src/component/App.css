@@ -3,8 +3,7 @@
     max-width: 1140px;
     height: 200vh;
     margin: 0 auto;
-    background: #fff url(./img/background.png);
-    background-size: cover;
+    background: #fff url(./img/background.png) repeat;
     padding: 20px;
     position: relative;
 }
