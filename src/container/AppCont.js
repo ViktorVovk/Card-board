@@ -75,13 +75,11 @@ export default class AppCont extends Component {
     };
     // фунция добавить карту справа, срабатывает при клике на кнопку
     addRight = (e) => {
-        e.target.classList.remove('card__btn--no-create');
         let newPositionLeft = e.currentTarget.parentNode.offsetWidth + e.currentTarget.parentNode.offsetLeft + e.currentTarget.offsetWidth + 40;
         let coords = e.currentTarget.getBoundingClientRect();
         let nextElem = document.elementFromPoint(coords.right+100, coords.top);
+       // не создавать карту если там она уже есть
           if(nextElem !== e.currentTarget.parentNode.parentNode && nextElem != null) {
-            console.log('no create card right');
-            e.target.classList.add('card__btn--no-create');
             return false
           }
         let newCard = JSON.stringify({
@@ -99,13 +97,12 @@ export default class AppCont extends Component {
         };
 // фунция добавить карту снизу, срабатывает при клике на кнопку
     addBottom = (e) => {
-      e.target.classList.remove('card__btn--no-create');
       let newPositionTop = e.currentTarget.parentNode.offsetHeight + e.currentTarget.parentNode.offsetTop + e.currentTarget.offsetHeight + 40;
       let coords = e.currentTarget.getBoundingClientRect();
       let nextElem = document.elementFromPoint(coords.left, coords.top+100);
+        // не создавать карту если там она уже есть
         if(nextElem !== e.currentTarget.parentNode.parentNode && nextElem !== null) {
           console.log('no create card bottom');
-          e.target.classList.add('card__btn--no-create');
           return false
         }
        let newCard = JSON.stringify({
