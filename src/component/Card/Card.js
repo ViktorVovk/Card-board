@@ -18,10 +18,11 @@ const Card = ({
     addBottom,
     addRight,
     noChangeColor,
-    card
+    card,
+    coordCard
   }) => {
         return(
-                  <div className="card" style={{backgroundColor: bgColor, top: card.options.top, left: card.options.left}}  data-id={`${card['_id']}`}>
+                  <div className="card" style={{backgroundColor: bgColor, top: coordCard.top, left: coordCard.left}}  data-id={`${card['_id']}`}>
                         <ColorPicker isColorPickerOpen={isColorPickerOpen} clickChangeColor={clickChangeColor}/>
                         <BtnColorPicker clickBtnColorPicker={clickBtnColorPicker} noChangeColor={noChangeColor}/>
                         <BtnEdit clickSaveEdit={clickSaveEdit} clickEdit={clickEdit} isContentEditable={isContentEditable}/> 

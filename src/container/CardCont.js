@@ -67,6 +67,7 @@ export default class CardCont extends PureComponent {
     };
     
   render() {
+    console.log('render')
     return (<Card clickBtnColorPicker={this.clickBtnColorPicker} 
                  clickChangeColor={this.clickChangeColor} 
                  clickEdit={this.clickEdit} 
@@ -77,6 +78,7 @@ export default class CardCont extends PureComponent {
                  card={this.props.card}
                  addBottom={this.props.addBottom}
                  addRight={this.props.addRight}
-                 noChangeColor={this.noChangeColor} /> )
+                 noChangeColor={this.noChangeColor} 
+                 coordCard={this.props.coordCard}/ > )
   }
 }
